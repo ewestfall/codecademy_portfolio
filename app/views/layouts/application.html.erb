@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,100,700,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<ul id="nav">
+			<li>Welcome</li>
+			<li>Portfolio</li>
+			<li>Blog</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li class="name">Erin Westfall</li>
+		</ul>
+	</div>
+</div>
+
+<%= yield %>
+
+<div id="footer">
+	<div class="container">
+		<ul class="social">
+			<li><a href="https://github.com/ewestfall"><%= image_tag("GitHub-Mark-32px.png") %></a></li>
+			<li><a href="www.linkedin.com/in/erinkwestfall"><%= image_tag("In-Black-34px-R.png") %></a></li>
+			<li><a href="https://twitter.com/erin_westfall"><%= image_tag("Twitter_logo_blue.png") %></a></li>
+		</ul>
+		<div id="copyright">&copy 2015 Erin Westfall</div>
+	</div>
+</div>
+
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</html>
