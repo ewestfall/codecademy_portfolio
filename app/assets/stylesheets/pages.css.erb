@@ -6,6 +6,10 @@ body {
 	font-size: 12px;
 }
 
+body a {
+	color: inherit;
+}
+
 /* nav */
 
 #header {
@@ -61,32 +65,42 @@ body {
 	clear: both;
 }
 
-.jumbotron {
-	background-image: url(http://www.wallpapersworld.net/user-content/uploads/wall/o/71/hawaii-venice-falls-maui_98990.jpg);
-	background-size: cover;
-	height: 500px;
-	background-position: 0px -40px;
+/* all pages */
+
+.main {
+	padding: 0;
 }
 
-.jumbotron h1 {
+/* welcome */
+
+#welcome .jumbotron {
+	background-image: url(http://www.wallpapersworld.net/user-content/uploads/wall/o/71/hawaii-venice-falls-maui_98990.jpg);
+	background-size: cover;
+	background-position: 0px -40px;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+#welcome h1 {
 	color: white;
 	text-align: right;
 	font-weight: 700;
 	width: 500px;
-	float: right
+	float: right;
+	margin-top: 100px;
 }
 
-.jumbotron h1 span {
+#welcome h1 span {
 	background-color: white;
 	color: black;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.jumbotron button {
+#welcome button {
 	float: right;
 	clear: both;
-	padding: 20px 40px 20px 40px;
+	padding: 10px 40px 10px 40px;
 	border-radius: 0;
 	border: none;
 	background-color: black;
@@ -95,3 +109,72 @@ body {
 	font-weight: 100;
 	margin-top: 50px;
 }
+
+/* portfolio */
+
+#portfolio .banner { 
+	position: relative;
+	overflow: auto; 
+}
+
+#portfolio .banner li { 
+	list-style: none;
+	float: left;
+}
+
+#portfolio .banner ul {
+	padding-left: 0;
+}
+
+#portfolio .banner img {
+	height: 500px;
+}
+
+#portfolio .banner .img {
+	text-align: center
+}
+
+#portfolio .jumbotron {
+	height: 500px;
+	padding: 0px;
+}
+
+.banner .one {
+	background-color: black;
+}
+
+.banner .two {
+	background-color: white;
+}
+
+.banner .three {
+	background-color: black;
+}
+
+#portfolio .row {
+	margin: 25px;
+}
+
+#portfolio .project {
+	margin: 25px;
+}
+
+.project img {
+	width: 100%;
+	border: 1px solid lightgrey;
+}
+
+#portfolio a {
+	transition: color .5s ease-in-out;
+}
+
+#portfolio a:hover {
+	text-decoration: none;
+	color: #ff3b4e;
+}
+
+
+
+
+
+
